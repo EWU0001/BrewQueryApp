@@ -1,0 +1,24 @@
+.dark {
+    background-color: #1a1a1a;
+    color: #e1dddd;
+}
+
+.light {
+    background-color: #835426;
+    color: #081f4e;
+}
+
+.switch {
+    float: flex;
+    background-color: #1a1a1a;
+    opacity: 1;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(156, 156, 33);
+    /* border-style: solid; */
+    padding: 1%;
+}

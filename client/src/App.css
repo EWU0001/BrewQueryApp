@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
