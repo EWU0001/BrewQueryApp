@@ -17,7 +17,7 @@ export function GetBreweryDetails() {
 
     return (
         <div className='brewery-details-background'>
-            <div className='background-image'>
+            <div className='brewery-background-image'>
                 <div className='brewery-details'>
                     <h2>{brewery.name} details:</h2>
                     <p>Name: {brewery.name}</p>

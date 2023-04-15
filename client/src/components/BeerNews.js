@@ -1,5 +1,3 @@
-//https://newsapi.org/v2/everything?&q=beer&pageSize=5&apiKey=2a86ca5163dc4a2ab710596417da00de
-
 import { useState, useEffect } from "react";
 import "./styling/BeerNews.css";
 
@@ -10,7 +8,7 @@ export function BeerNews() {
     useEffect(() => {
         const fetchNews = async () => {
             const response = await fetch(
-                `https://newsapi.org/v2/everything?q=beer&pageSize=5&sortBy=popularity&apiKey=${API_KEY}`
+                `https://newsapi.org/v2/everything?q=beer&pageSize=4&sortBy=popularity&apiKey=${API_KEY}`
             );
             const data = await response.json();
             setNews(data.articles);
@@ -19,17 +17,23 @@ export function BeerNews() {
     },);
 
     return (
-        <div id="scroll-container">
-            <h3>Top Beer News</h3>
-            <div id="scroll-text">
-                {news && news.length > 0 ? (news.map((article, index) => (
-                    <div className={`article-title-${index}`} key={index}>
-                        {article.title}
+        <div id="news-carousel-container">
+            {news && news.length > 0 ? (
+                news.map((article, index) => (
+                    <div className={`carousel-image-${index}`} key={index}>
+                        <div className="carousel-item">
+                            <div className="card">
+                                <div className="card-image">
+                                    <img src={article.urlToImage} alt={article.title} />
+                                </div>
+                                <div className="card-title">{article.title}</div>
+                            </div>
+                        </div>
                     </div>
                 ))
-                ) : (<div>Read too much News today....</div>
-                )}
-            </div>
+            ) : (<div>Read too much News today....</div>
+            )}
+
         </div>
     );
 }

@@ -1,4 +1,3 @@
-import { FaSearchengin } from 'react-icons/fa' //using react-icons
 import { useState } from 'react';
 import './styling/Search.css';
 
@@ -7,7 +6,7 @@ export const SearchBrewery = ({ setResults }) => {
     const [input, setInput] = useState("");
 
     const fetchData = (data) => {
-        fetch("https://api.openbrewerydb.org/v1/breweries?by_type=micro&per_page=50")
+        fetch("https://api.openbrewerydb.org/v1/breweries?by_type=micro&per_page=100")
             .then((res) => res.json())
             .then((json) => {
                 const searchResult = json.filter((brewery) => {
@@ -26,16 +25,16 @@ export const SearchBrewery = ({ setResults }) => {
         fetchData(data);
     }
     return (
-        <div className="input-wrapper">
-            <div sty>
-                <FaSearchengin id="search-icon" />
+        <div className='search-box'>
+            <form name='search-form'>
                 <input
                     className='search-bar-input'
-                    placeholder='Type here.....'
+                    placeholder='name of brewery'
                     value={input}
                     onChange={(e) => changeHandler(e.target.value)}
                 />
-            </div>
+                <i className='fas fa-search'></i>
+            </form>
         </div>
     )
 }

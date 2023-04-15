@@ -17,8 +17,8 @@
 .label {
     display: block;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    font-family: comic Sans MS;
     color: rgb(156, 156, 33);
-    /* border-style: solid; */
     padding: 1%;
 }
