@@ -1,5 +1,6 @@
 import { FaSearchengin } from 'react-icons/fa' //using react-icons
 import { useState } from 'react';
+import './styling/Search.css';
 
 export const SearchBrewery = ({ setResults }) => {
 
@@ -26,7 +27,7 @@ export const SearchBrewery = ({ setResults }) => {
     }
     return (
         <div className="input-wrapper">
-            <div>
+            <div sty>
                 <FaSearchengin id="search-icon" />
                 <input
                     className='search-bar-input'

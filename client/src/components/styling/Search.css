@@ -3,7 +3,7 @@
     padding-bottom: 5vh;
     margin: auto;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .input-wrapper {
     background-color: grey;
-    width: 100%;
+    width: 80%;
     border-radius: 10px;
     height: 2rem;
     padding: 20px 20px;
@@ -44,6 +44,12 @@
 input:focus {
     outline: none;
     color: orange;
+}
+
+.input-field {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 #search-icon {
@@ -78,26 +84,24 @@ input:focus {
 /* scrolling text css */
 .scrolling-text {
     position: fixed;
-    top: 35%;
-    width: 100;
+    top: 65%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     text-shadow: 0 0 3px #f7c63f, 0 0 6px #f7c63f, 0 0 9px #f7c63f, 0 0 12px #f7c63f, 0 0 15px #f7c63f, 0 0 18px #f7c63f, 0 0 21px #f7c63f;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-    width: 100%;
-    overflow: hidden;
-    z-index: 0;
+    z-index: 3;
 }
 
 .scrolling-text span {
     display: inline-block;
     animation: marquee 10s linear infinite;
+    width: 100vw;
 }
 
 @keyframes marquee {
     0% {
-        transform: translateX(200);
+        transform: translateX(100%);
     }
 
     100% {

@@ -19,7 +19,6 @@ export const NavBar = () => {
                     <NavLink color="white" eventKey="1" as={Link} to="/contact">Account</NavLink>
                 </Nav>
             </Navbar.Collapse>
-            <hr className="border" />
             <ThemeSwitch />
         </Navbar>
     )

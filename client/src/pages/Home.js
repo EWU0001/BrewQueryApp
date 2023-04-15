@@ -7,7 +7,7 @@ import BrewTimeline from "../components/Timeline";
 
 export function Home() {
     return (
-        <div>
+        <div className="background-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/vintagebackground.png` }}>
             <div className="video-section">
                 <div className="video-container" >
                     <video autoPlay loop muted className="beerservedvideo" >
@@ -16,7 +16,7 @@ export function Home() {
                     <button className="button-home" >Search Brewery</button>
                 </div>
             </div>
-            <div className="background-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/vintagebackground.png` }}>
+            <div>
                 {/* <BeerNews /> */}
                 <BrewTimeline />
                 <BrewerDefinition />

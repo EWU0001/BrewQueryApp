@@ -1,7 +1,8 @@
+import './styling/Home.css'
 
 export function BrewerDefinition() {
     return (
-        <div>
+        <div className="brewer-definition">
             <h1>Craft Brewer Definition</h1>
             <h3>
                 An American craft brewer is a small and independent brewer.

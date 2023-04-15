@@ -11,7 +11,7 @@ export function ShowMap() {
                 initialViewState={{
                     longitude: -97.46818222,
                     latitude: 35.25738891,
-                    zoom: 3
+                    zoom: 4
                 }}
                 style={{ width: "100%", height: " calc(50vh - 77px)" }}
                 mapStyle="https://api.maptiler.com/maps/streets/style.json?key=N1ewBuTtTOkxieXwdAnk"

@@ -9,14 +9,25 @@
     position: sticky;
     top: 0;
     opacity: 0.7;
+    position: relative;
+}
+
+.Navbar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    /* Change this value to adjust the position of the line */
+    width: 30%;
+    /* Change this value to adjust the width of the line */
+    height: 1px;
+    /* Change this value to adjust the thickness of the line */
+    background-color: grey;
+    /* Change this value to adjust the color of the line */
 }
 
 .Navlinks {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
-
-.border {
-    color: aqua;
-    border-style: dotted;
 }

@@ -28,8 +28,7 @@ export function DisplayBreweries() {
         setByState(keyword);
     };
     return (
-        <div>
-
+        <div className='backdrop'>
             <TypeAnimation className='type-animation-text'
                 sequence={[
                     'MicroBreweries from State of New York',
@@ -70,7 +69,7 @@ export function DisplayBreweries() {
                     ))
                 ) : breweries.map((brewery) => (
                     <p key={brewery.id} className="brewery">
-                        <span className='brewery-name'>Brewery: {brewery.name}</span>
+                        <span className='brewery-name'> {brewery.name}</span>
                         <span className='brewery-state'>State: {brewery.state}</span>
                         <Link to={`/breweries/${brewery.id}`}>
                             <button className='button-details'>Details</button>

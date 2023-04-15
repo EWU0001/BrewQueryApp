@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import '../components/styling/BreweriesList.css'
 
 export function GetBreweryDetails() {
     const { id } = useParams();
@@ -15,13 +16,17 @@ export function GetBreweryDetails() {
     // console.log(brewery); // test if object fetch successfully 
 
     return (
-        <div>
-            <h2>{brewery.name} details:</h2>
-            <p>Name: {brewery.name}</p>
-            <p>State: {brewery.state}</p>
-            <p>Website: </p>
-            <a href={brewery.website_url}>{brewery.website_url}</a>
-        </div >
+        <div className='brewery-details-background'>
+            <div className='background-image'>
+                <div className='brewery-details'>
+                    <h2>{brewery.name} details:</h2>
+                    <p>Name: {brewery.name}</p>
+                    <p>State: {brewery.state}</p>
+                    <p>Website: </p>
+                    <a href={brewery.website_url}>{brewery.website_url}</a>
+                </div>
+            </div>
+        </div>
     );
 }
 // mapbox api key

@@ -7,11 +7,12 @@
     border-color: grey;
     margin: 5%;
     height: 10%;
+    width: auto;
 }
 
-.map-wrap {
+/* .map-wrap {
     position: relative;
     width: 100%;
     height: calc(100vh - 77px);
     margin: auto;
-}
+} */
