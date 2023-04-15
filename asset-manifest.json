@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/BrewQueryApp/static/css/main.6612a696.css",
-    "main.js": "/BrewQueryApp/static/js/main.479472b7.js",
+    "main.css": "/BrewQueryApp/static/css/main.b1dd0ea9.css",
+    "main.js": "/BrewQueryApp/static/js/main.490ca983.js",
     "static/js/483.e36c37d5.chunk.js": "/BrewQueryApp/static/js/483.e36c37d5.chunk.js",
     "static/js/787.fda6e7b5.chunk.js": "/BrewQueryApp/static/js/787.fda6e7b5.chunk.js",
     "static/media/beerservedvideo.mp4": "/BrewQueryApp/static/media/beerservedvideo.730c1a9e3db76eb481b7.mp4",
     "static/media/fa-solid-900.svg": "/BrewQueryApp/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
     "static/media/fa-brands-400.svg": "/BrewQueryApp/static/media/fa-brands-400.2f517e09eb2ca6650ff5.svg",
+    "static/media/vintagebarrel.png": "/BrewQueryApp/static/media/vintagebarrel.2f439fbaf987a1963c17.png",
     "static/media/fa-solid-900.eot": "/BrewQueryApp/static/media/fa-solid-900.9bbb245e67a133f6e486.eot",
     "static/media/fa-solid-900.ttf": "/BrewQueryApp/static/media/fa-solid-900.be9ee23c0c6390141475.ttf",
     "static/media/fa-regular-400.svg": "/BrewQueryApp/static/media/fa-regular-400.4689f52cc96215721344.svg",
@@ -21,13 +22,13 @@
     "static/media/fa-regular-400.woff": "/BrewQueryApp/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/fa-regular-400.woff2": "/BrewQueryApp/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/BrewQueryApp/index.html",
-    "main.6612a696.css.map": "/BrewQueryApp/static/css/main.6612a696.css.map",
-    "main.479472b7.js.map": "/BrewQueryApp/static/js/main.479472b7.js.map",
+    "main.b1dd0ea9.css.map": "/BrewQueryApp/static/css/main.b1dd0ea9.css.map",
+    "main.490ca983.js.map": "/BrewQueryApp/static/js/main.490ca983.js.map",
     "483.e36c37d5.chunk.js.map": "/BrewQueryApp/static/js/483.e36c37d5.chunk.js.map",
     "787.fda6e7b5.chunk.js.map": "/BrewQueryApp/static/js/787.fda6e7b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6612a696.css",
-    "static/js/main.479472b7.js"
+    "static/css/main.b1dd0ea9.css",
+    "static/js/main.490ca983.js"
   ]
 }
