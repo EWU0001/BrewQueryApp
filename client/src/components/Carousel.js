@@ -1,1 +1,0 @@
-//put news into carousel

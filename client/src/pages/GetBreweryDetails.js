@@ -16,18 +16,17 @@ export function GetBreweryDetails() {
     // console.log(brewery); // test if object fetch successfully 
 
     return (
-        <div className='brewery-details-background'>
-            <div className='brewery-background-image'>
-                <div className='brewery-details'>
-                    <h2>{brewery.name} details:</h2>
-                    <p>Name: {brewery.name}</p>
-                    <p>State: {brewery.state}</p>
-                    <p>Website: </p>
-                    <a href={brewery.website_url}>{brewery.website_url}</a>
-                </div>
+
+        <div className='brewery-background-image'>
+            <div className='brewery-details'>
+                <h2>{brewery.name}</h2>
+                <p>Brewery Name: {brewery.name}</p>
+                <p>Street: {brewery.street}</p>
+                <p>City: {brewery.city}</p>
+                <p>State: {brewery.state}</p>
+                <span>Website: <a href={brewery.website_url}>{brewery.website_url}</a></span>
             </div>
         </div>
+
     );
 }
-// mapbox api key
-// pk.eyJ1IjoibjExMjU0NzI2IiwiYSI6ImNsZ2JpNWt4bjAzd3gzcm8wdnBpNG9rcGcifQ.7KP5_-nRVDpmvqRfeDD_lA

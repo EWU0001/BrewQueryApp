@@ -24,8 +24,10 @@ export function Home() {
             </div>
             <div>
                 <BrewTimeline />
-                <BeerNews />
-                <BrewerDefinition />
+                <div>
+                    <BeerNews />
+                    <BrewerDefinition />
+                </div>
             </div>
         </div>
     )

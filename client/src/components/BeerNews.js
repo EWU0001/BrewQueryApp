@@ -17,7 +17,7 @@ export function BeerNews() {
     },);
 
     return (
-        <div id="news-carousel-container">
+        <div id="news-container">
             {news && news.length > 0 ? (
                 news.map((article, index) => (
                     <div className={`carousel-image-${index}`} key={index}>
@@ -31,7 +31,7 @@ export function BeerNews() {
                         </div>
                     </div>
                 ))
-            ) : (<div>Read too much News today....</div>
+            ) : (<div className="card-title">Read too much News today....</div>
             )}
 
         </div>

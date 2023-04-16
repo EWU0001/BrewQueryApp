@@ -22,3 +22,17 @@
     color: rgb(156, 156, 33);
     padding: 1%;
 }
+
+.pagenotfound-background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
+}
+
+.pagenotfound-title {
+    color: white;
+    background-color: red;
+}
