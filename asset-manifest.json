@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BrewQueryApp/static/css/main.aefcd77e.css",
-    "main.js": "/BrewQueryApp/static/js/main.f9397413.js",
+    "main.css": "/BrewQueryApp/static/css/main.3ea8742f.css",
+    "main.js": "/BrewQueryApp/static/js/main.d7163320.js",
     "static/js/483.e36c37d5.chunk.js": "/BrewQueryApp/static/js/483.e36c37d5.chunk.js",
     "static/js/787.fda6e7b5.chunk.js": "/BrewQueryApp/static/js/787.fda6e7b5.chunk.js",
     "static/media/beerservedvideo.mp4": "/BrewQueryApp/static/media/beerservedvideo.730c1a9e3db76eb481b7.mp4",
@@ -22,13 +22,13 @@
     "static/media/fa-regular-400.woff": "/BrewQueryApp/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/fa-regular-400.woff2": "/BrewQueryApp/static/media/fa-regular-400.7a3337626410ca2f4071.woff2",
     "index.html": "/BrewQueryApp/index.html",
-    "main.aefcd77e.css.map": "/BrewQueryApp/static/css/main.aefcd77e.css.map",
-    "main.f9397413.js.map": "/BrewQueryApp/static/js/main.f9397413.js.map",
+    "main.3ea8742f.css.map": "/BrewQueryApp/static/css/main.3ea8742f.css.map",
+    "main.d7163320.js.map": "/BrewQueryApp/static/js/main.d7163320.js.map",
     "483.e36c37d5.chunk.js.map": "/BrewQueryApp/static/js/483.e36c37d5.chunk.js.map",
     "787.fda6e7b5.chunk.js.map": "/BrewQueryApp/static/js/787.fda6e7b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aefcd77e.css",
-    "static/js/main.f9397413.js"
+    "static/css/main.3ea8742f.css",
+    "static/js/main.d7163320.js"
   ]
 }
