@@ -96,7 +96,7 @@
 /* styling for brewery details page */
 .brewery-details {
     position: absolute;
-    top: 45%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 65%;
@@ -148,4 +148,11 @@
     background-size: cover;
     background-position: center center;
     backdrop-filter: blur(10px);
+}
+
+.brewery-details-map {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50%;
 }

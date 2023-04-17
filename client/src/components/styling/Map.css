@@ -5,7 +5,7 @@
     box-shadow: 0px 0px 10px white;
     border-style: solid;
     border-color: grey;
-    margin: 5%;
-    height: 10%;
+    margin: 0;
+    height: auto;
     width: auto;
 }

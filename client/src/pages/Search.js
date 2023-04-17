@@ -15,7 +15,7 @@ export function Search() {
                 <div className="scrolling-text">
                     <span>Search Breweries by Name Click to see brewery's details</span>
                 </div>
-                <ShowMap />
+                <ShowMap longitude="" latitude="" />
             </div>
 
             <div className="search-container">
