@@ -96,10 +96,10 @@
 /* styling for brewery details page */
 .brewery-details {
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 65%;
     max-width: 800px;
     font-weight: bold;
     color: white;
@@ -110,6 +110,7 @@
     box-shadow: 0 0 10px rgba(61, 60, 60, 0.6);
     transition: all 0.3s ease-in-out;
     text-align: center;
+    justify-content: center;
 }
 
 .brewery-details:before {
@@ -128,7 +129,7 @@
 
 .brewery-details:hover {
     box-shadow: 0 15px 20px rgba(90, 85, 85, 0.8);
-    color: #eacc58;
+    color: yellow;
     font-weight: bold;
 }
 
