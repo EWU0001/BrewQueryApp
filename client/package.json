@@ -1,7 +1,6 @@
 {
   "name": "brewfinderapp",
   "version": "0.1.0",
-  "homepage": " https://ewu0001.github.io/BrewQueryApp",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",

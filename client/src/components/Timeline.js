@@ -15,7 +15,7 @@ export default function BrewTimeline() {
                 <h2 className='timeline-title'>The Brewing Journey</h2>
                 <TimelineItem>
                     <TimelineOppositeContent color="text.warning">
-                        <img src="../../public/img/water.png" alt='water' width={100} height={100} />
+                        <img src="%PUBLIC_URL%/../img/water.png" alt='water' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot variant='' />
@@ -26,7 +26,7 @@ export default function BrewTimeline() {
 
                 <TimelineItem>
                     <TimelineOppositeContent color="text.secondary">
-                        <img src="%PUBLIC_URL%/../img/Barley.png" alt='barley' width={100} height={100} />
+                        <img src="%PUBLIC_URL%/../img/barley.png" alt='barley' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot />

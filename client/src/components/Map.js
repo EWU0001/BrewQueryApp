@@ -4,7 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import './styling/Map.css'
 
 export function ShowMap() {
-    const MAP_API_KEY = process.env.MAPTILER_API_KEY;
+    const MAP_API_KEY = process.env.REACT_APP_MAPTILER_API_KEY;
 
     return (
         <div className='map'>
