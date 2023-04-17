@@ -4,6 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import './styling/Map.css'
 
 export function ShowMap() {
+    const MAP_API_KEY = process.env.MAPTILER_API_KEY;
 
     return (
         <div className='map'>
@@ -14,7 +15,7 @@ export function ShowMap() {
                     zoom: 4
                 }}
                 style={{ width: "100%", height: " calc(50vh - 77px)" }}
-                mapStyle="https://api.maptiler.com/maps/streets/style.json?key=N1ewBuTtTOkxieXwdAnk"
+                mapStyle={`https://api.maptiler.com/maps/streets/style.json?key=${MAP_API_KEY}`}
             >
                 <NavigationControl position="top-left" />
                 {/* create markers/points on map */}

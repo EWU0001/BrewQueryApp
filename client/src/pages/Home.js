@@ -1,4 +1,4 @@
-import { BeerNews } from "../components/BeerNews"
+// import { BeerNews } from "../components/BeerNews"
 import { useNavigate } from 'react-router-dom';
 import { BrewerDefinition } from "../components/BrewerDefinition"
 import beerservedvideo from '../video/beerservedvideo.mp4';
@@ -25,7 +25,8 @@ export function Home() {
             <div>
                 <BrewTimeline />
                 <div>
-                    <BeerNews />
+                    {/* news api allows 50 requests every 12hours under free usage */}
+                    {/* <BeerNews />  */}
                     <BrewerDefinition />
                 </div>
             </div>

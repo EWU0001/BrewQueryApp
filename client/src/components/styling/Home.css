@@ -62,8 +62,6 @@
     text-align: center;
     padding: 1%;
     width: 100vw;
-    background-color: rgba(52, 51, 49, 0.5);
-    border-radius: 5%;
 }
 
 .def-h1 span,
@@ -73,5 +71,5 @@
     font-family: cursive;
     font-weight: bold;
     background-color: rgb(188, 158, 53);
-
+    opacity: 0.8;
 }
