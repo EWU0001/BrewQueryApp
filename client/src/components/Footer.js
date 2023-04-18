@@ -2,6 +2,9 @@ import '../components/styling/Footer.css'
 import { CDBBox, CDBBtn, CDBIcon, CDBContainer } from 'cdbreact';
 
 export function Footer() {
+    const beerqueryicon = require("../img/beerqueryicon.png");
+    const SupportLocalBrewery = require("../img/Support-Local-Brewery.png");
+
     return (
         <div className="footer">
             <CDBContainer className="shadow">
@@ -15,7 +18,7 @@ export function Footer() {
                             {/* img from https://cdn.craftbeer.com/wp-content/uploads/20201218151926/Support-Your-Local-Brewery.png */}
                             <img
                                 alt="logo1"
-                                src="%PUBLIC_URL%/../img/Support-Local-Brewery.png"
+                                src={SupportLocalBrewery}
                                 width="100px"
                             />
                         </a>
@@ -24,7 +27,7 @@ export function Footer() {
                         <a href="/" className="d-flex align-items-center p-0 text-dark">
                             <img
                                 alt="logo2"
-                                src="%PUBLIC_URL%/../img/beerqueryicon.png"
+                                src={beerqueryicon}
                                 width="50px"
                             />
                         </a>

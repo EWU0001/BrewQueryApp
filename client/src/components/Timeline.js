@@ -9,13 +9,20 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import './styling/Home.css'
 
 export default function BrewTimeline() {
+    const water = require("../img/water.png");
+    const barley = require("../img/barley.png");
+    const hop = require("../img/hop.png");
+    const yeast = require("../img/yeast.png");
+    const brewtank = require("../img/brewtank.png");
+    const barrel = require("../img/barrel.png");
+
     return (
         <div className='timeline'>
             <Timeline position="alternate" >
                 <h2 className='timeline-title'>The Brewing Journey</h2>
                 <TimelineItem>
                     <TimelineOppositeContent color="text.warning">
-                        <img src="%PUBLIC_URL%/../img/water.png" alt='water' width={100} height={100} />
+                        <img src={water} alt='water' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot variant='' />
@@ -26,7 +33,7 @@ export default function BrewTimeline() {
 
                 <TimelineItem>
                     <TimelineOppositeContent color="text.secondary">
-                        <img src="%PUBLIC_URL%/../img/barley.png" alt='barley' width={100} height={100} />
+                        <img src={barley} alt='barley' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot />
@@ -37,7 +44,7 @@ export default function BrewTimeline() {
 
                 <TimelineItem>
                     <TimelineOppositeContent color="text.secondary">
-                        <img src="%PUBLIC_URL%/../img/hop.png" alt='hop' width={100} height={100} />
+                        <img src={hop} alt='hop' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot />
@@ -48,7 +55,7 @@ export default function BrewTimeline() {
 
                 <TimelineItem>
                     <TimelineOppositeContent color="text.secondary">
-                        <img src='%PUBLIC_URL%/../img/yeast.png' alt='yeast' width={100} height={100} />
+                        <img src={yeast} alt='yeast' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot />
@@ -59,7 +66,7 @@ export default function BrewTimeline() {
 
                 <TimelineItem>
                     <TimelineOppositeContent color="text.secondary">
-                        <img src='%PUBLIC_URL%/../img/brewtank.png' alt='brewtank' width={100} height={100} />
+                        <img src={brewtank} alt='brewtank' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot />
@@ -70,7 +77,7 @@ export default function BrewTimeline() {
 
                 <TimelineItem>
                     <TimelineOppositeContent color="text.secondary">
-                        <img src='%PUBLIC_URL%/../img/barrel.png' alt='barrel' width={100} height={100} />
+                        <img src={barrel} alt='barrel' width={100} height={100} />
                     </TimelineOppositeContent>
                     <TimelineSeparator>
                         <TimelineDot />

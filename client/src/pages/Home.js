@@ -11,9 +11,11 @@ export function Home() {
     const searchClick = () => {
         history('/search');
     };
+    const backgroundImage = require("../img/vintagebackground.png");
+
 
     return (
-        <div className="home-background-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/vintagebackground.png` }}>
+        <div className="home-background-image" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <div className="video-section">
                 <div className="video-container" >
                     <video autoPlay loop muted className="beerservedvideo" >

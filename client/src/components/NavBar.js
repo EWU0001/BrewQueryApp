@@ -5,6 +5,7 @@ import { ThemeSwitch } from './ThemeSwitch';
 import './styling/Navbar.css'
 
 export const NavBar = () => {
+    const beerqueryicon = require("../img/beerqueryicon.png");
     return (
         <Navbar className="Navbar" collapseOnSelect expand="sm" bg="dar" variant="dark" >
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
@@ -13,7 +14,7 @@ export const NavBar = () => {
                     <NavLink color="white" eventKey="1" as={Link} to="/">Home</NavLink>
                     <NavLink color="white" eventKey="1" as={Link} to="/breweries">Craftbreweries</NavLink>
                     <a href="/" className="logo logo d-flex align-items-center justify-content-center" sticky="top">
-                        <img alt="logo" src="%PUBLIC_URL%/../img/beerqueryicon.png" width="60px" />
+                        <img alt="logo" src={beerqueryicon} width="60px" />
                     </a>
                     <NavLink color="white" eventKey="1" as={Link} to="/search">Search</NavLink>
                     <NavLink color="white" eventKey="1" as={Link} to="/contact">Account</NavLink>
