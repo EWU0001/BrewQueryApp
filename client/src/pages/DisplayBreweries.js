@@ -3,12 +3,18 @@ import { useState } from 'react';
 import { Link } from "react-router-dom"
 import { TypeAnimation } from 'react-type-animation';
 import '../components/styling/BreweriesList.css'
+import Avatar from '@mui/material/Avatar';
 
 export function DisplayBreweries() {
 
     const { loading, error, breweries } = ListOfBreweries();
     const [byState, setByState] = useState(breweries);
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState();
+
+    if (!result && breweries && breweries.length > 0) {
+        setResult(breweries);
+    }
+
     if (loading) {
         return <p>Bringing you a list of breweries...</p>
     }
@@ -60,22 +66,20 @@ export function DisplayBreweries() {
                 {result && result.length > 0 ? (
                     result.map((brewery) => (
                         <p key={brewery.id} className="brewery">
-                            <span className='brewery-name'>Brewery: {brewery.name}</span>
+                            <span className='brewery-name'> {brewery.name}</span>
                             <span className='brewery-state'>State: {brewery.state}</span>
+                            {/* <img height="100"  alt='brewery logo' /> */}
+                            <Avatar
+                                alt="brewery-icons"
+                                src={`https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${brewery.website_url}/&size=256`}
+                                sx={{ width: 48, height: 48 }}
+                            />
                             <Link to={`/breweries/${brewery.id}`}>
                                 <button className='button-details'>Details</button>
                             </Link>
                         </p>
-                    ))
-                ) : breweries.map((brewery) => (
-                    <p key={brewery.id} className="brewery">
-                        <span className='brewery-name'> {brewery.name}</span>
-                        <span className='brewery-state'>State: {brewery.state}</span>
-                        <Link to={`/breweries/${brewery.id}`}>
-                            <button className='button-details'>Details</button>
-                        </Link>
-                    </p>
-                ))}
+                    ))) : (<p>No breweries </p>)
+                }
             </div>
             <br />
         </div>

@@ -90,6 +90,7 @@
     border-style: groove;
     width: 20%;
     margin: 1%;
+    color: #efe51a;
 
 }
 
@@ -120,10 +121,10 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    background: rgba(169, 127, 11, 0.3);
+    background: rgba(1, 1, 1, 0.7);
     border-radius: 20px;
     pointer-events: none;
-    z-index: 3;
+    z-index: -1;
     transition: all 0.3s ease-in-out;
 }
 

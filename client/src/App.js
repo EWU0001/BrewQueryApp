@@ -36,22 +36,12 @@ function Root() {
       <header>
         <NavBar />
       </header>
-      {/* <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/breweries">Craftbreweries</Link>
-      <Link to="/search">Search</Link>
-      <Link to="/contact">Account</Link> */}
-
-      {/* use cdbreact to create list group for list of breweries */}
-      {/* insert header and navbar here */}
-      {/* anything above and below Outlet will display in every page */}
-      {/* <ThemeSwitch /> */}
       <section>
         <main>
+          {/* anything above and below Outlet will display in every page */}
           <Outlet />
         </main>
       </section>
-
       <Footer />
     </div>
   )

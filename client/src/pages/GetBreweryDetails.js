@@ -30,7 +30,7 @@ export function GetBreweryDetails() {
                 <p>Street: {brewery.street}</p>
                 <p>City: {brewery.city}</p>
                 <p>State: {brewery.state}</p>
-                {brewery.website_url ? (<span>Website: <a href={brewery.website_url}>{brewery.website_url}</a></span>
+                {brewery.website_url ? (<span>Website: <a id='website_url' href={brewery.website_url}>{brewery.website_url}</a></span>
                 ) : ("")}
             </div>
         </div>
