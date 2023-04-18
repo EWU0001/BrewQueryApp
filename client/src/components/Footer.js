@@ -32,13 +32,13 @@ export function Footer() {
                     </CDBBox>
                     <CDBBox display="flex" >
                         <CDBBtn flat color="light" className="p-2">
-                            <CDBIcon fab icon="facebook-f" />
+                            <CDBIcon fab spin icon="github" />
                         </CDBBtn>
                         <CDBBtn flat color="light" className="mx-3 p-2">
-                            <CDBIcon fab icon="twitter" />
+                            <CDBIcon fab spin icon="twitter" />
                         </CDBBtn>
                         <CDBBtn flat color="light" className="p-2">
-                            <CDBIcon fab icon="instagram" />
+                            <CDBIcon fab spin icon="instagram" />
                         </CDBBtn>
                     </CDBBox>
                 </CDBBox>
