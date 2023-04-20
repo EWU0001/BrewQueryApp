@@ -11,13 +11,13 @@ export const NavBar = () => {
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll" >
                 <Nav className="Navlinks flex-grow-1 justify-content-center align-items-center" sticky="top">
-                    <NavLink color="white" eventKey="1" as={Link} to="/">Home</NavLink>
-                    <NavLink color="white" eventKey="1" as={Link} to="/breweries">Craftbreweries</NavLink>
-                    <a href="/" className="logo logo d-flex align-items-center justify-content-center" sticky="top">
+                    <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp">Home</NavLink>
+                    <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/breweries">Craftbreweries</NavLink>
+                    <a href="/BrewQueryApp" className="logo logo d-flex align-items-center justify-content-center" sticky="top">
                         <img alt="logo" src={beerqueryicon} width="60px" />
                     </a>
-                    <NavLink color="white" eventKey="1" as={Link} to="/search">Search</NavLink>
-                    <NavLink color="white" eventKey="1" as={Link} to="/contact">Account</NavLink>
+                    <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/search">Search</NavLink>
+                    <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/logIn">Account</NavLink>
                 </Nav>
             </Navbar.Collapse>
             <ThemeSwitch />

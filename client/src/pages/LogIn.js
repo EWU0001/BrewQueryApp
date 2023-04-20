@@ -23,7 +23,7 @@ export function LogIn() {
                     </MDBCol>
                 </MDBRow>
 
-                <MDBBtn type='submit' className='mb-4' block onSubmit={(e) => { e.preventDefault(); }} href='!#'>
+                <MDBBtn type='submit' className='mb-4' block onSubmit={(e) => { e.preventDefault(); }} href='/BrewQueryApp/logIn'>
                     Sign in
                 </MDBBtn>
 

@@ -9,7 +9,7 @@ import BrewTimeline from "../components/Timeline";
 export function Home() {
     const history = useNavigate();
     const searchClick = () => {
-        history('/search');
+        history('/BrewQueryApp/search');
     };
     const backgroundImage = require("../img/vintagebackground.png");
 

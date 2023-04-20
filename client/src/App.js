@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       { path: "/BrewQueryApp", element: <Home /> },
       { path: "/BrewQueryApp/breweries", element: <DisplayBreweries /> },
       { path: "/BrewQueryApp/search", element: <Search /> },
-      { path: "/BrewQueryApp/LogIn", element: <LogIn /> },
+      { path: "/BrewQueryApp/logIn", element: <LogIn /> },
       { path: "/BrewQueryApp/breweries/:id", element: <GetBreweryDetails /> },
       { path: "*", element: <PageNotFound /> }
     ]

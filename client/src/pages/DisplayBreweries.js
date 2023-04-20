@@ -66,7 +66,7 @@ export function DisplayBreweries() {
                                 src={`https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${brewery.website_url}/&size=256`}
                                 sx={{ width: 48, height: 48 }}
                             />
-                            <Link to={`/breweries/${brewery.id}`}>
+                            <Link to={`/BrewQueryApp/breweries/${brewery.id}`}>
                                 <button className='button-details'>Details</button>
                             </Link>
                         </p>

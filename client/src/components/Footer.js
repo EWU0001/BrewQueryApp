@@ -14,7 +14,7 @@ export function Footer() {
                     alignItems="flex-end"
                 >
                     <CDBBox>
-                        <a href="/" className="d-flex align-items-center p-0 text-dark">
+                        <a href="#!" className="d-flex align-items-center p-0 text-dark">
                             {/* img from https://cdn.craftbeer.com/wp-content/uploads/20201218151926/Support-Your-Local-Brewery.png */}
                             <img
                                 alt="logo1"
@@ -24,7 +24,7 @@ export function Footer() {
                         </a>
                     </CDBBox>
                     <CDBBox display="flex" alignItems="center">
-                        <a href="/" className="d-flex align-items-center p-0 text-dark">
+                        <a href="#!" className="d-flex align-items-center p-0 text-dark">
                             <img
                                 alt="logo2"
                                 src={beerqueryicon}

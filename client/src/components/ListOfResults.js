@@ -9,7 +9,7 @@ export const ListOfResults = ({ results }) => {
         //use Link to navigate 
         <div
             className="result-list"
-            onClick={() => navigate(`/breweries/${results.id}`)}
+            onClick={() => navigate(`/BrewQueryApp/breweries/${results.id}`)}
         >{results.name}
         </div>
     )
