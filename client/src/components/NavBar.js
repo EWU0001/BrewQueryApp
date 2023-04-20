@@ -7,7 +7,7 @@ import './styling/Navbar.css'
 export const NavBar = () => {
     const beerqueryicon = require("../img/beerqueryicon.png");
     return (
-        <Navbar className="Navbar" collapseOnSelect expand="sm" bg="dar" variant="dark" >
+        <Navbar className="Navbar" collapseOnSelect expand="sm" variant="dark" sticky="top" >
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll" >
                 <Nav className="Navlinks flex-grow-1 justify-content-center align-items-center" sticky="top">

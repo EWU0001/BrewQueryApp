@@ -11,7 +11,7 @@ export function Footer() {
                 <CDBBox
                     display="flex"
                     justifyContent="between"
-                    alignItems="center"
+                    alignItems="flex-end"
                 >
                     <CDBBox>
                         <a href="/" className="d-flex align-items-center p-0 text-dark">
@@ -28,17 +28,17 @@ export function Footer() {
                             <img
                                 alt="logo2"
                                 src={beerqueryicon}
-                                width="50px"
+                                width="60px"
                             />
                         </a>
                         <small className="ms-2">&copy; BrewQuery, 2023. All rights reserved.</small>
                     </CDBBox>
-                    <CDBBox display="flex" >
+                    <CDBBox display="flex">
                         <CDBBtn flat color="light" className="p-2">
                             <CDBIcon fab spin icon="github" />
                         </CDBBtn>
                         <CDBBtn flat color="light" className="mx-3 p-2">
-                            <CDBIcon fab spin icon="twitter" />
+                            <CDBIcon fab spin icon="facebook" />
                         </CDBBtn>
                         <CDBBtn flat color="light" className="p-2">
                             <CDBIcon fab spin icon="instagram" />

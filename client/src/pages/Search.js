@@ -30,7 +30,7 @@ export function Search() {
                             'or type keyword "brew" for list of breweries.',
                             1000,
                         ]}
-                        speed={50}
+                        speed={50} //speed for writing/typing 
                         style={{ fontSize: '1em' }}
                         repeat={Infinity}
                     />

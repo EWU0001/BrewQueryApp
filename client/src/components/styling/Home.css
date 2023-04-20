@@ -27,7 +27,7 @@
 .beerservedvideo {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .button-home {
@@ -54,22 +54,43 @@
 
 .timeline-title {
     color: yellow;
-    /* font-weight: bold; */
-    font-family: Rockwell Extra Bold;
-}
-
-.brewer-definition {
-    text-align: center;
-    padding: 1%;
-    width: 100vw;
-}
-
-.def-h1 span,
-.def-h4 span,
-.def-p span {
-    color: white;
-    font-family: cursive;
+    font-family: Segoe Script;
     font-weight: bold;
-    background-color: rgb(188, 158, 53);
-    opacity: 0.8;
+    text-shadow: #FC0 10px 0 10px;
+}
+
+.brewtimeline-section {
+    z-index: 999;
+    padding-top: 1%;
+}
+
+/* FunFacts styling */
+.fun-facts-heading {
+    color: #e8e7e7;
+    text-align: center !important;
+    text-transform: uppercase;
+    font-family: Raleway, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    padding: 2%;
+    font-size: 2rem;
+    background-color: black;
+}
+
+.fact-column {
+    display: inline-block;
+    color: rgb(246, 214, 88);
+    margin-left: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+}
+
+.fact-column h6 {
+    color: black;
+    background-color: rgb(240, 240, 114);
 }

@@ -19,11 +19,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     children: [
-      { path: "/", element: <Home /> },
-      { path: "/breweries", element: <DisplayBreweries /> },
-      { path: "/search", element: <Search /> },
-      { path: "/contact", element: <LogIn /> },
-      { path: "/breweries/:id", element: <GetBreweryDetails /> },
+      { path: "/BrewQueryApp", element: <Home /> },
+      { path: "/BrewQueryApp/breweries", element: <DisplayBreweries /> },
+      { path: "/BrewQueryApp/search", element: <Search /> },
+      { path: "/BrewQueryApp/LogIn", element: <LogIn /> },
+      { path: "/BrewQueryApp/breweries/:id", element: <GetBreweryDetails /> },
       { path: "*", element: <PageNotFound /> }
     ]
   }

@@ -19,7 +19,7 @@ export default function BrewTimeline() {
     return (
         <div className='timeline'>
             <Timeline position="alternate" >
-                <h2 className='timeline-title'>The Brewing Journey</h2>
+                <h3 className='timeline-title'>The Brewing Journey</h3>
                 <TimelineItem>
                     <TimelineOppositeContent color="text.warning">
                         <img src={water} alt='water' width={100} height={100} />

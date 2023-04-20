@@ -1,6 +1,6 @@
 import { BeerNews } from "../components/BeerNews"
 import { useNavigate } from 'react-router-dom';
-import { BrewerDefinition } from "../components/BrewerDefinition"
+import { FunFacts } from "../components/FunFacts"
 import beerservedvideo from '../video/beerservedvideo.mp4';
 import '../components/styling/Home.css'
 import BrewTimeline from "../components/Timeline";
@@ -24,14 +24,17 @@ export function Home() {
                     <button className="button-home" onClick={searchClick}>Search Brewery</button>
                 </div>
             </div>
-            <div>
+            <div className="brewtimeline-section">
                 <BrewTimeline />
-                <div>
-                    {/* news api allows 50 requests every 12hours under free usage */}
-                    <BeerNews />
-                    <BrewerDefinition />
-                </div>
             </div>
+            <div className="beernews-section">
+                {/* news api allows 50 requests every 12hours under free usage */}
+                <BeerNews />
+            </div>
+            <div>
+                <FunFacts />
+            </div>
+
         </div>
     )
 }

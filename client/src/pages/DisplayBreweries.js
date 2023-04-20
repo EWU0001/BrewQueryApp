@@ -37,17 +37,9 @@ export function DisplayBreweries() {
         <div className='backdrop'>
             <TypeAnimation className='type-animation-text'
                 sequence={[
-                    'MicroBreweries from State of New York',
-                    1000,
-                    'MicroBreweries from State of Texas',
-                    1000,
-                    'MicroBreweries from State of Nevada',
-                    1000,
-                    'MicroBreweries from State of Indiana',
-                    1000,
-                    'MicroBreweries from State of Michigan',
-                    1000,
-                    'MicroBreweries from State of California',
+                    `Craft Breweries from State of ${result}`,
+                    1000, //wait 1second
+                    `Craft Breweries from State of ${breweries.state}`,
                     1000,
                 ]}
                 speed={50}
