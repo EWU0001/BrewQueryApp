@@ -49,7 +49,12 @@
 }
 
 .button-home:hover {
-    transform: rotate(6deg);
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+    opacity: 1;
+    border-color: black;
+
 }
 
 .timeline-title {
@@ -74,6 +79,7 @@
     padding: 2%;
     font-size: 2rem;
     background-color: black;
+    opacity: 0.75;
 }
 
 .fact-column {
