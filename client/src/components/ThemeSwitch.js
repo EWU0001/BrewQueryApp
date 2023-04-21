@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import './styling/ThemeSwitch.css';
-import Switch from '@mui/material/Switch';
+import { BsFillSunFill } from 'react-icons/bs';
 
 export function ThemeSwitch() {
     const [theme, setTheme] = useState('dark'); //using useState hook to track current theme
@@ -18,7 +18,7 @@ export function ThemeSwitch() {
         <div className={`ThemeSwitch ${theme}`}>
             <div className="switch">
                 <label className="label">Switch Theme</label>
-                <Switch color="default" onClick={toggleTheme} />
+                <BsFillSunFill color="default" onClick={toggleTheme} style={{ cursor: 'pointer' }} />
             </div>
         </div>
     );

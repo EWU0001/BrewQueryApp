@@ -17,7 +17,7 @@ export default function BrewTimeline() {
     const barrel = require("../img/barrel.png");
 
     return (
-        <div className='timeline'>
+        <div className='timeline-section'>
             <Timeline position="alternate" >
                 <h3 className='timeline-title'>The Brewing Journey</h3>
                 <TimelineItem>

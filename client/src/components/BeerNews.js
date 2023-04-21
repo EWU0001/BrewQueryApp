@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./styling/BeerNews.css";
-import { Card, CardMedia, CardContent, Typography, Grid } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, Grid, Alert } from '@mui/material';
 
 export function BeerNews() {
     const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
@@ -14,7 +14,7 @@ export function BeerNews() {
                     `https://newsapi.org/v2/everything?q=brewery&pageSize=4&sortBy=relevancy&apiKey=${API_KEY}`
                 );
                 if (!response.ok) {
-                    throw new Error(`Failed to fetch news: ${response.status}`);
+                    throw new Error(`News is not available. ${response.status}`);
                 }
                 const data = await response.json();
                 setNews(data.articles);
@@ -27,11 +27,11 @@ export function BeerNews() {
     }, [API_KEY]);
 
     return (
-        <div className="news-container">
+        <div className="news-section">
             <h3 className="news-title">Top Brew News</h3>
             {error ? (
-                <Typography variant="h5" component="h2" color="error">
-                    Error: {error.message}
+                <Typography variant="h5" component="h2">
+                    <Alert severity="info">Error: {error.message}</Alert>
                 </Typography>
             ) : (
                 <>

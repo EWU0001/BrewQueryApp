@@ -34,13 +34,13 @@ export function Footer() {
                         <small className="ms-2">&copy; BrewQuery, 2023. All rights reserved.</small>
                     </CDBBox>
                     <CDBBox display="flex">
-                        <CDBBtn flat color="light" className="p-2">
+                        <CDBBtn color="light" size='3x' className="p-2" circle outline >
                             <CDBIcon fab spin icon="github" />
                         </CDBBtn>
-                        <CDBBtn flat color="light" className="mx-3 p-2">
+                        <CDBBtn flat color="light" className="mx-3 p-2" circle outline >
                             <CDBIcon fab spin icon="facebook" />
                         </CDBBtn>
-                        <CDBBtn flat color="light" className="p-2">
+                        <CDBBtn flat color="light" className="p-2" circle outline >
                             <CDBIcon fab spin icon="instagram" />
                         </CDBBtn>
                     </CDBBox>
