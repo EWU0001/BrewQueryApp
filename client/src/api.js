@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export async function GetMicroBreweries() {
-    const url = "https://api.openbrewerydb.org/v1/breweries?by_type=micro&per_page=50";
+    const url = "https://api.openbrewerydb.org/v1/breweries?by_type=micro&per_page=120";
 
     let res = await fetch(url);
     let data = await res.json();
