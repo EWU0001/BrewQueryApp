@@ -8,6 +8,7 @@ export const NavBar = () => {
     const beerqueryicon = require("../img/beerqueryicon.png");
     return (
         <Navbar className="Navbar" collapseOnSelect expand="sm" variant="dark" sticky="top" >
+            <ThemeSwitch />
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll" >
                 <Nav className="Navlinks flex-grow-1 justify-content-center align-items-center" sticky="top">
@@ -20,7 +21,6 @@ export const NavBar = () => {
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/logIn">Account</NavLink>
                 </Nav>
             </Navbar.Collapse>
-            <ThemeSwitch />
         </Navbar>
     )
 }

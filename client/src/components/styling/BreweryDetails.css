@@ -1,0 +1,65 @@
+/* styling for brewery details page */
+.brewery-details {
+    position: relative;
+    top: 50%;
+    left: 100%;
+    margin-left: 70%;
+    padding: 2%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    font-weight: bold;
+    color: white;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(95, 66, 3, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.brewery-details:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(87, 63, 20, 0.5);
+    border-radius: 20px;
+    pointer-events: none;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.brewery-details:hover {
+    box-shadow: 0 15px 20px rgba(90, 85, 85, 0.8);
+    color: yellow;
+    font-weight: bold;
+}
+
+.brewery-details:hover:before {
+    transform: scaleX(1.5) scaleY(1.2);
+}
+
+.brewery-background-image {
+    background-image: url('../../img/glowbrewing.png');
+    width: 40vw;
+    height: 40vh;
+    top: 10%;
+    margin: 3%;
+    left: 0;
+    right: 0;
+    position: static;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+
+.brewery-details-map {
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin: 2%;
+    height: 50%;
+}

@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import '../components/styling/BreweriesList.css'
+import '../components/styling/BreweryDetails.css'
 import { ShowMap } from '../components/Map';
 
 export function GetBreweryDetails() {
@@ -16,22 +16,24 @@ export function GetBreweryDetails() {
     // console.log(brewery); // test if object fetch successfully 
 
     return (
-        <div className='brewery-background-image'>
+        <div>
+            <div className='brewery-background-image'>
+                <div className='brewery-details'>
+                    <h2>{brewery.name}</h2>
+                    <p>Brewery Name: {brewery.name}</p>
+                    <p>Street: {brewery.street}</p>
+                    <p>City: {brewery.city}</p>
+                    <p>State: {brewery.state}</p>
+                    {brewery.website_url ? (<a onClick={() => window.open(brewery.website_url, 'breweryWebsite')} id='website_url' href='#!'>{brewery.website_url}</a>
+                    ) : ("")}
+                </div>
+            </div>
             <div className='brewery-details-map'>
                 {brewery.latitude && brewery.longitude ? (
                     <ShowMap latitude={brewery.latitude} longitude={brewery.longitude} />
                 ) : (
                     <h3>Location Not Available</h3>
                 )}
-            </div>
-            <div className='brewery-details'>
-                <h2>{brewery.name}</h2>
-                <p>Brewery Name: {brewery.name}</p>
-                <p>Street: {brewery.street}</p>
-                <p>City: {brewery.city}</p>
-                <p>State: {brewery.state}</p>
-                {brewery.website_url ? (<a onClick={() => window.open(brewery.website_url, 'breweryWebsite')} id='website_url' href='#!'>{brewery.website_url}</a>
-                ) : ("")}
             </div>
         </div>
     );

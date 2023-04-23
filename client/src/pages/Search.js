@@ -18,8 +18,8 @@ export function Search() {
                 <ShowMap longitude="" latitude="" />
             </div>
 
-            <div className="search-container">
-                <div>
+            <div className="search-background">
+                <div className="search-container">
                     <TypeAnimation
                         className='type-animation'
                         sequence={[
@@ -34,9 +34,9 @@ export function Search() {
                         style={{ fontSize: '1em' }}
                         repeat={Infinity}
                     />
+                    <SearchBrewery setResults={setResults} />
+                    <SearchBreweryResults results={results} />
                 </div>
-                <SearchBrewery setResults={setResults} />
-                <SearchBreweryResults results={results} />
             </div>
         </div>
     )

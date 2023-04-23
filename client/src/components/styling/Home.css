@@ -81,10 +81,12 @@
 }
 
 .fun-facts-heading {
-    color: #e8e7e7;
+    color: yellow;
+    font-family: Segoe Script;
+    font-weight: bold;
+    text-shadow: #FC0 10px 0 10px;
     text-align: center !important;
     text-transform: uppercase;
-    font-family: Raleway, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight: bolder;
     padding: 2%;
     font-size: 2rem;
