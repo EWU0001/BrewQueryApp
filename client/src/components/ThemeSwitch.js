@@ -18,7 +18,7 @@ export function ThemeSwitch() {
         <div className={`ThemeSwitch ${theme}`}>
             <div className="switch">
                 <label className="label">Switch Theme</label>
-                <BsFillSunFill color="default" onClick={toggleTheme} style={{ cursor: 'pointer' }} />
+                <BsFillSunFill color="default" onClick={toggleTheme} tabIndex={0} style={{ cursor: 'pointer' }} />
             </div>
         </div>
     );

@@ -46,6 +46,8 @@ export function BeerNews() {
                                             height="280"
                                             image={article.urlToImage}
                                             alt={article.title}
+                                            tabIndex={0}
+                                            onKeyPress={() => window.open(article.url, '_blank')}
                                             onClick={() => window.open(article.url, '_blank')}
                                             sx={{ cursor: 'pointer' }}
                                             to={article.url}

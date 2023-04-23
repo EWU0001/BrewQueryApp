@@ -26,7 +26,7 @@ export const SearchBrewery = ({ setResults }) => {
     }
     return (
         <div className='search-box'>
-            <form name='search-form'>
+            <form name='search-form' tabIndex={0}>
                 <input
                     className='search-bar-input'
                     placeholder='name of brewery'
