@@ -8,18 +8,20 @@ export const NavBar = () => {
     const beerqueryicon = require("../img/beerqueryicon.png");
     return (
         <Navbar className="Navbar" collapseOnSelect expand="sm" variant="dark" sticky="top" >
-            <ThemeSwitch />
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-target="#navbarScroll" />
+            <a href="/BrewQueryApp" className="logo logo d-flex align-items-center justify-content-center" style={{ paddingLeft: "1%" }} sticky="top">
+                <img alt="logo" src={beerqueryicon} width="60px" />
+            </a>
             <Navbar.Collapse id="navbarScroll" >
-                <Nav className="Navlinks flex-grow-1 justify-content-center align-items-center" sticky="top">
+                <Nav className="Navlinks flex-grow-1" sticky="top">
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp">Home</NavLink>
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/breweries">Craftbreweries</NavLink>
-                    <a href="/BrewQueryApp" className="logo logo d-flex align-items-center justify-content-center" sticky="top">
-                        <img alt="logo" src={beerqueryicon} width="60px" />
-                    </a>
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/search">Search</NavLink>
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/logIn">Account</NavLink>
                 </Nav>
+                <div style={{ float: 'right' }}>
+                    <ThemeSwitch />
+                </div>
             </Navbar.Collapse>
         </Navbar>
     )

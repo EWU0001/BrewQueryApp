@@ -1,7 +1,7 @@
 .Navbar {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    align-items: left;
     background-color: #101010;
     position: sticky;
     top: 0;
@@ -13,6 +13,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: aliceblue;
+    margin-left: auto;
+    text-align: left;
+    padding-top: 0.5%;
+    padding-left: 2%;
 }
 
 #navbarScroll {
