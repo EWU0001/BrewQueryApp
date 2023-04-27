@@ -4,6 +4,7 @@ import './styling/Search.css';
 export const SearchBrewery = ({ setResults }) => {
 
     const [input, setInput] = useState("");
+    const [error, setError] = useState("");
 
     const fetchData = (data) => {
         fetch("https://api.openbrewerydb.org/v1/breweries?by_type=micro&per_page=100")
@@ -17,6 +18,11 @@ export const SearchBrewery = ({ setResults }) => {
                         brewery.name.toLowerCase().includes(data)
                     );
                 });
+                if (searchResult.length === 0) {
+                    setError("No breweries found");
+                } else {
+                    setError("");
+                }
                 setResults(searchResult);
             });
     }
@@ -35,6 +41,7 @@ export const SearchBrewery = ({ setResults }) => {
                 />
                 <i className='fas fa-search'></i>
             </form>
+            {error && <div className="error-message">{error}</div>}
         </div>
     )
 }
