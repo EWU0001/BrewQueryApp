@@ -1,4 +1,4 @@
-import { ListOfBreweries } from '../api';
+import { ListOfBreweries } from '../components/api';
 import { useState } from 'react';
 import { Link } from "react-router-dom"
 import '../components/styling/BreweriesList.css'
@@ -137,7 +137,7 @@ export function DisplayBreweries() {
                             </Link>
                         </div>
                     ))
-                ) : (<p>No breweries </p>)
+                ) : (<p>No Breweries found</p>)
                 }
                 {result && result.length > 0 && currentBreweries && currentBreweries.length === 0 ? (
                     result.map((brewery) => (
