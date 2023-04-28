@@ -4,7 +4,7 @@ import { FunFacts } from "../components/FunFacts"
 import beerservedvideo from '../video/beerservedvideo.mp4';
 import '../components/styling/Home.css'
 import BrewTimeline from "../components/Timeline";
-// background image soruced from https://wallpaperaccess.com/
+// background image soruced from https://wallpaperaccess.com/vintage-beer
 
 export function Home() {
     const history = useNavigate();
