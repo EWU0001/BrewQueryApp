@@ -5,6 +5,7 @@ import beerservedvideo from '../video/beerservedvideo.mp4';
 import '../components/styling/Home.css'
 import BrewTimeline from "../components/Timeline";
 // background image soruced from https://wallpaperaccess.com/vintage-beer
+import Tooltip from "@mui/material/Tooltip";
 
 export function Home() {
     const history = useNavigate();
@@ -21,7 +22,9 @@ export function Home() {
                     <video autoPlay loop muted className="beerservedvideo" >
                         <source src={beerservedvideo} type="video/mp4" />
                     </video>
-                    <button className="button-home" onClick={searchClick}>Search Brewery</button>
+                    <Tooltip title="Search">
+                        <button className="button-home" onClick={searchClick}>Search Brewery</button>
+                    </Tooltip>
                 </div>
             </div>
             <div className="brewtimeline-section">

@@ -1,17 +1,26 @@
 import { MDBInput, MDBCol, MDBRow, MDBCheckbox, MDBBtn } from 'mdb-react-ui-kit';
 import '../components/styling/LogIn.css'
 import { useState } from 'react';
+import validator from "validator"
 
 export function LogIn() {
 
-    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [message, setMessage] = useState("");
+
+    const validateEmail = (e) => {
+        const email = e.target.value;
+        const message = validator.isEmail(email) ? "email is valid" : "please enter a valid email address";
+        setMessage(message);
+    }
+
 
     return (
         <div className='form-page'>
             <form className='form'>
                 <h3>Sign In</h3>
-                <MDBInput className='mb-4' type='email' id='email' label='Email address' value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                <span style={{ fontWeight: "bold", color: "red" }}>{message}</span>
+                <MDBInput className='mb-4' type='email' id='email' label='Email address' onChange={(e) => validateEmail(e)} />
                 <MDBInput className='mb-4' type='password' id='password' label='Password' value={password} onChange={(e) => { setPassword(e.target.value) }} />
 
                 <MDBRow className='mb-4'>
