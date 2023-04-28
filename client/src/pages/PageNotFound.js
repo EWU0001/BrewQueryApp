@@ -1,5 +1,5 @@
 import image from '../img/404background.png';
-
+// Images created by Bing Ai image generator (2023) 
 export function PageNotFound() {
     return (
         <div className='pagenotfound-background' style={{ backgroundImage: `url(${image})` }} >
