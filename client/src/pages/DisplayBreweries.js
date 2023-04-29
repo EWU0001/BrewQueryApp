@@ -85,6 +85,7 @@ export function DisplayBreweries() {
     const handlePageClick = (event, value) => {
         setCurrentPage(value);
     };
+    const notfoundicon = require("../img/notfoundicon.png");
 
     return (
         <div className='brewerylist-backdrop'>
@@ -137,7 +138,7 @@ export function DisplayBreweries() {
                             </Link>
                         </div>
                     ))
-                ) : (<p>No Breweries found</p>)
+                ) : (<div><img src={notfoundicon} alt='notfoundicon' height={80} width={80} /><p style={{ color: "red", fontWeight: "bold" }}>Please check your input</p></div>)
                 }
                 {result && result.length > 0 && currentBreweries && currentBreweries.length === 0 ? (
                     result.map((brewery) => (

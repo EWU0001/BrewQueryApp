@@ -4,7 +4,14 @@ import './styling/Search.css';
 export const SearchBrewery = ({ setResults }) => {
 
     const [input, setInput] = useState("");
-    const [error, setError] = useState("");
+    const [error, setError] = useState();
+
+    const notfoundicon = require("../img/notfoundicon.png");
+    const errorMessage = () => {
+        return (
+            <div style={{ paddingTop: "80%" }}><img src={notfoundicon} alt='notfoundicon' height={50} width={50} /><p style={{ color: "red", fontWeight: "bold" }}>Try input again!</p></div>
+        );
+    };
 
     const fetchData = (data) => {
         fetch("https://api.openbrewerydb.org/v1/breweries?by_type=micro&per_page=100")
@@ -19,7 +26,7 @@ export const SearchBrewery = ({ setResults }) => {
                     );
                 });
                 if (searchResult.length === 0) {
-                    setError("No breweries found");
+                    setError(errorMessage);
                 } else {
                     setError("");
                 }
@@ -32,16 +39,20 @@ export const SearchBrewery = ({ setResults }) => {
     }
     return (
         <div className='search-box'>
-            <form name='search-form' tabIndex={0}>
-                <input
-                    className='search-bar-input'
-                    placeholder='name of brewery'
-                    value={input}
-                    onChange={(e) => changeHandler(e.target.value)}
-                />
+            <div>
                 <i className='fas fa-search'></i>
-            </form>
-            {error && <div className="error-message">{error}</div>}
+                <form name='search-form' tabIndex={0}>
+                    <input
+                        className='search-bar-input'
+                        placeholder='name of brewery'
+                        value={input}
+                        onChange={(e) => changeHandler(e.target.value)}
+                    />
+                </form>
+            </div>
+            <div>
+                {error && <div className="error-message">{error}</div>}
+            </div>
         </div>
     )
 }
