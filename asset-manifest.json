@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BrewQueryApp/static/css/main.283c4dec.css",
-    "main.js": "/BrewQueryApp/static/js/main.99901ece.js",
+    "main.css": "/BrewQueryApp/static/css/main.67fdeb26.css",
+    "main.js": "/BrewQueryApp/static/js/main.0aa5b95e.js",
     "static/js/483.2134c836.chunk.js": "/BrewQueryApp/static/js/483.2134c836.chunk.js",
     "static/js/787.fda6e7b5.chunk.js": "/BrewQueryApp/static/js/787.fda6e7b5.chunk.js",
     "static/media/beerservedvideo.mp4": "/BrewQueryApp/static/media/beerservedvideo.5b37b0a0f7ca80fd7201.mp4",
@@ -24,6 +24,7 @@
     "static/media/fa-regular-400.ttf": "/BrewQueryApp/static/media/fa-regular-400.491974d108fe4002b2aa.ttf",
     "static/media/barley.png": "/BrewQueryApp/static/media/barley.14b0d07ec878ea7698a4.png",
     "static/media/glowbrewing.png": "/BrewQueryApp/static/media/glowbrewing.a9e3319ce9704ed2d718.png",
+    "static/media/notfoundicon.png": "/BrewQueryApp/static/media/notfoundicon.21eec0543db95dc38483.png",
     "static/media/fa-regular-400.woff": "/BrewQueryApp/static/media/fa-regular-400.bb58e57c48a3e911f15f.woff",
     "static/media/brewtank.png": "/BrewQueryApp/static/media/brewtank.92cf3183b50587929037.png",
     "static/media/brewery.png": "/BrewQueryApp/static/media/brewery.6f932f00c72e359fe1cf.png",
@@ -31,13 +32,13 @@
     "static/media/beericon.png": "/BrewQueryApp/static/media/beericon.a68c7928221cbe7819f1.png",
     "static/media/barrel.png": "/BrewQueryApp/static/media/barrel.e23bbf63e5acdaa0e11d.png",
     "index.html": "/BrewQueryApp/index.html",
-    "main.283c4dec.css.map": "/BrewQueryApp/static/css/main.283c4dec.css.map",
-    "main.99901ece.js.map": "/BrewQueryApp/static/js/main.99901ece.js.map",
+    "main.67fdeb26.css.map": "/BrewQueryApp/static/css/main.67fdeb26.css.map",
+    "main.0aa5b95e.js.map": "/BrewQueryApp/static/js/main.0aa5b95e.js.map",
     "483.2134c836.chunk.js.map": "/BrewQueryApp/static/js/483.2134c836.chunk.js.map",
     "787.fda6e7b5.chunk.js.map": "/BrewQueryApp/static/js/787.fda6e7b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.283c4dec.css",
-    "static/js/main.99901ece.js"
+    "static/css/main.67fdeb26.css",
+    "static/js/main.0aa5b95e.js"
   ]
 }
