@@ -24,7 +24,7 @@ export function DisplayBreweries() {
         return <p>Bringing you a list of breweries...</p>
     }
     if (error) {
-        return <p>Breweries Down!! :{error.message}</p>
+        return <p>Breweries Down!! {error.message}</p>
     }
     //filtering by state
     const filterByState = (e) => {
