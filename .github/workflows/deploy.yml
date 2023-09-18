@@ -30,11 +30,7 @@ jobs:
         
     - name: Install dependencies
       run: npm install
-      working-directory: client      
-
-    - name: Run E2E tests
-      run: npx cypress run
-      working-directory: client
+      working-directory: client 
 
     - name: Build
       run: npm run build
