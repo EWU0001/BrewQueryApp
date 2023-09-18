@@ -10,6 +10,7 @@ import { Search } from './pages/Search';
 import { GetBreweryDetails } from './pages/GetBreweryDetails';
 import { PageNotFound } from './pages/PageNotFound';
 import { NavBar } from './components/NavBar';
+import { Register } from './pages/Register';
 //import page navigation newest version of react router dom
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: "/BrewQueryApp/breweries", element: <DisplayBreweries /> },
       { path: "/BrewQueryApp/search", element: <Search /> },
       { path: "/BrewQueryApp/logIn", element: <LogIn /> },
+      { path: "/BrewQueryApp/register", element: <Register /> },
       { path: "/BrewQueryApp/breweries/:id", element: <GetBreweryDetails /> },
       { path: "*", element: <PageNotFound /> }
     ]

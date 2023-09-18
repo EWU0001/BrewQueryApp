@@ -17,10 +17,10 @@ export function LogIn() {
 
     return (
         <div className='form-page'>
-            <form className='form'>
                 <h3>Sign In</h3>
-                <span style={{ fontWeight: "bold", color: "red" }}>{message}</span>
-                <MDBInput className='mb-4' type='email' id='email' label='Email address' onChange={(e) => validateEmail(e)} />
+            <form className='form'>
+                <span data-cyc="message" style={{ fontWeight: "bold", color: "red" }}>{message}</span>
+                <MDBInput data-cy="emailInput" className='mb-4' type='email' id='email' label='Email address' onChange={(e) => validateEmail(e)} />
                 <MDBInput className='mb-4' type='password' id='password' label='Password' value={password} onChange={(e) => { setPassword(e.target.value) }} />
 
                 <MDBRow className='mb-4'>
@@ -38,7 +38,7 @@ export function LogIn() {
 
                 <div className='text-center'>
                     <p>
-                        Not a member? <a href='#!'>Register</a>
+                        Not a member? <a data-cy="register" href={('/BrewQueryApp/register')}>Register</a>
                     </p>
                 </div>
             </form>
