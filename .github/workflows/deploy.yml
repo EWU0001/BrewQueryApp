@@ -33,11 +33,18 @@ jobs:
     needs: build 
     runs-on: ubuntu-latest
     name: Deploy
-    steps:           
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: pages
+        path: dist        
     - name: Deploy to GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v4
+      uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
-        build_dir: ./
+        build_dir: ./dist/
+        jekyll: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
