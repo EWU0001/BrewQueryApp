@@ -41,7 +41,7 @@ export function GetBreweryDetails() {
                     </div>
                     <div className='brewery-details-map'>
                         {brewery.latitude && brewery.longitude ? (
-                            <ShowMap latitude={brewery.latitude} longitude={brewery.longitude} />
+                            <ShowMap latitude={brewery.latitude} longitude={brewery.longitude} message={brewery.name} zoom={10} />
                         ) : (
                             <h3>Location Not Available</h3>
                         )}

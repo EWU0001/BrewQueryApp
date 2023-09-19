@@ -2,6 +2,8 @@ import { MDBInput, MDBCol, MDBRow, MDBCheckbox, MDBBtn } from 'mdb-react-ui-kit'
 import '../components/styling/LogIn.css'
 import { useState } from 'react';
 import validator from "validator"
+import { useNavigate } from 'react-router-dom';
+
 
 export function LogIn() {
 
@@ -13,7 +15,10 @@ export function LogIn() {
         const message = validator.isEmail(email) ? "email is valid" : "please enter a valid email address";
         setMessage(message);
     }
-
+    const history = useNavigate();
+    const registerClick = () => {
+        history('/BrewQueryApp/register');
+    }
 
     return (
         <div className='form-page'>
@@ -38,7 +43,7 @@ export function LogIn() {
 
                 <div className='text-center'>
                     <p>
-                        Not a member? <a data-cy="register" href={('/BrewQueryApp/register')}>Register</a>
+                        Not a member? <p data-cy="register" style={{color:'blue', cursor:'pointer'}} onClick={registerClick}>Register</p>
                     </p>
                 </div>
             </form>
