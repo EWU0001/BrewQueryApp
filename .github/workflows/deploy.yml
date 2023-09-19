@@ -16,7 +16,7 @@ jobs:
         node-version: [18.x]
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3    
+      uses: actions/checkout@v2    
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
@@ -24,8 +24,10 @@ jobs:
         cache: 'npm'        
     - name: Install dependencies
       run: npm install
+      working-directory: client
     - name: Build
       run: npm run build
+      working-directory: client
       
   deploy:
     needs: build 
