@@ -1,51 +1,44 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
 name: BrewQueryApp CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 permissions:
   contents: write
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.x]
-
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
-    
+      uses: actions/checkout@v3    
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        
+        cache: 'npm'        
     - name: Install dependencies
       run: npm install
       working-directory: client 
-
     - name: Build
       run: npm run build
       working-directory: client
       
   deploy:
-     name: Deploy
-     needs: build
-     runs-on: ubuntu-latest
-     if: github.ref == 'refs/heads/main'
-
-     steps:
-       - name: Deploy to gh-pages
-         uses: peaceiris/actions-gh-pages@v3
-         with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}    
-           publish_dir: ./public    
+    needs: build 
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:           
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v4
+      with:
+        target_branch: gh-pages
+        build_dir: public
+        jekyll: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
