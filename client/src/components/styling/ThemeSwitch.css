@@ -1,9 +1,9 @@
-.dark {
+.Dark {
     background-color: #1a1a1a;
     color: #e1dddd;
 }
 
-.light {
+.Light {
     background-color: #835426;
     color: #081f4e;
 }
@@ -20,7 +20,7 @@
     font-size: 0.6rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(156, 156, 33);
-    padding: 1%;
+    padding: 1%;    
 }
 
 .pagenotfound-background {

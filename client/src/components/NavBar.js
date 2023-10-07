@@ -22,7 +22,7 @@ export const NavBar = () => {
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/search">Search</NavLink>
                     <NavLink color="white" eventKey="1" as={Link} to="/BrewQueryApp/logIn">Account</NavLink>
                 </Nav>
-                <div style={{ float: 'right' }}>
+                <div style={{ float: 'right',marginRight:'1%' }}>
                     <ThemeSwitch />
                 </div>
             </Navbar.Collapse>
