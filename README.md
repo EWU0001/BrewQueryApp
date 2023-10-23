@@ -1,5 +1,6 @@
 # BrewQuery
 (https://ewu0001.github.io/BrewQueryApp/)
+A Web application provides information about craft breweries in the US. Data sourced from "Open Brewery DB".
 
 Front-End Web Application developed using ReactJS.
 

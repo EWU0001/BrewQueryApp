@@ -40,11 +40,11 @@ export const SearchBrewery = ({ setResults }) => {
     return (
         <div className='search-box'>
             <div>
-                <i className='fas fa-search'></i>
                 <form name='search-form' tabIndex={0}>
+                {/* <i className='fas fa-search'/> */}
                     <input
                         className='search-bar-input'
-                        placeholder='name of brewery'
+                        placeholder='Search by Name of Brewery'
                         value={input}
                         onChange={(e) => changeHandler(e.target.value)}
                     />

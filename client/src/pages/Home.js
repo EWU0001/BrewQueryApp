@@ -1,4 +1,4 @@
-import { BeerNews } from "../components/BeerNews"
+// import { BeerNews } from "../components/BeerNews"
 import { useNavigate } from 'react-router-dom';
 import { FunFacts } from "../components/FunFacts"
 import beerservedvideo from '../video/beerservedvideo.mp4';
@@ -11,12 +11,10 @@ export function Home() {
     const history = useNavigate();
     const searchClick = () => {
         history('/BrewQueryApp/search');
-    };
-    const backgroundImage = require("../img/vintagebackground.png");
-
+    };   
 
     return (
-        <div className="home-background-image" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="home-background-image">
             <div className="video-section">
                 <div className="video-container" >
                     <video autoPlay loop muted className="beerservedvideo" >
@@ -32,7 +30,7 @@ export function Home() {
             </div>
             <div className="beernews-section">
                 {/* news api allows 50 requests every 12hours under free usage */}
-                <BeerNews />
+                {/* <BeerNews /> */}
             </div>
             <div>
                 <FunFacts />
