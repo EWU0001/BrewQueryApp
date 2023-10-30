@@ -31,7 +31,7 @@ jobs:
     - name: Cypress run
       uses: cypress-io/github-action@v3
       with:
-        project: ./client
+        working-directory: client
         browser: chrome
         build: npm run build
         start: npm start
