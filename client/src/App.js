@@ -62,7 +62,7 @@ function TitleUpdater() {
     let title = "Your Default Title";
     switch (path) {
       case "/BrewQueryApp":
-        title = "BrewQuery";
+        title = "Home - BrewQuery";
         break;
       case "/BrewQueryApp/breweries":
         title = "Breweries - BrewQuery";
@@ -77,7 +77,7 @@ function TitleUpdater() {
         title = "SignUp - BrewQuery";
         break;
       default:
-        title = "Page Not Found";
+        title = "BrewQuery";
     }
     document.title = title;
   }, [location.pathname]);
