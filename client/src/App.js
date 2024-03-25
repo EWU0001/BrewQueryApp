@@ -1,6 +1,7 @@
 //import styling
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from 'react';
 //import list of pages
 import { Home } from './pages/Home';
 import { DisplayBreweries } from './pages/DisplayBreweries';
@@ -12,7 +13,7 @@ import { PageNotFound } from './pages/PageNotFound';
 import { NavBar } from './components/NavBar';
 import { Register } from './pages/Register';
 //import page navigation newest version of react router dom
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet, useLocation } from 'react-router-dom';
 
 //create path for pages
 const router = createBrowserRouter([
@@ -40,6 +41,7 @@ function Root() {
       </header>
       <section>
         <main>
+          <TitleUpdater/>
           {/* anything above and below Outlet will display in every page */}
           <Outlet />
         </main>
@@ -51,5 +53,35 @@ function Root() {
 
 function App() {
   return <RouterProvider router={router} />;
+}
+function TitleUpdater() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    let title = "Your Default Title";
+    switch (path) {
+      case "/BrewQueryApp":
+        title = "BrewQuery";
+        break;
+      case "/BrewQueryApp/breweries":
+        title = "Breweries - BrewQuery";
+        break;
+      case "/BrewQueryApp/search":
+        title = "Search - BrewQuery";
+        break;
+      case "/BrewQueryApp/logIn":
+        title = "Account - BrewQuery ";
+        break;
+      case "/BrewQueryApp/register":
+        title = "SignUp - BrewQuery";
+        break;
+      default:
+        title = "Page Not Found";
+    }
+    document.title = title;
+  }, [location.pathname]);
+
+  return null;
 }
 export default App;
